@@ -49,24 +49,22 @@
 	</dependencies>
 	
 	<distributionManagement>
-    	<repository>
-        	<id>central</id>
-        	<name>Artifactory-releases</name>
-        	<url>http://35.168.123.122:8081/artifactory/libs-release-local</url> 
-    	</repository>
+ 		<repository>
+        		<id>central</id>
+        		<name>Artifactory-releases</name>
+        		<url>http://mep-artifactory.eastus.cloudapp.azure.com/artifactory/libs-release</url>
+    		</repository>
 		<snapshotRepository>
-        	<id>snapshots</id>
-        	<name>Artifactory-snapshots</name>
-        	<url>http://35.168.123.122:8081/artifactory/libs-snapshot-local</url>
-    	</snapshotRepository>
-
+        		<id>snapshots</id>
+        		<name>Artifactory-snapshots</name>
+        		<url>http://mep-artifactory.eastus.cloudapp.azure.com/artifactory/libs-snapshot</url>
+    		</snapshotRepository>
 	</distributionManagement>
 
 	<scm>
-  		<connection>scm:git:git@github.com:nandudemy/devops.git</connection>
-  		<developerConnection>scm:git:git@github.com:nandudemy/devops.git</developerConnection>
- 		<url>git@github.com:nandudemy/devops.git</url>
-  		<tag>HEAD</tag>
+		<url>https://github.com/amateus1/devops-july</url>
+		<connection>scm:git:https://github.com/amateus1/devops-july.git</connection>
+		<tag>v1.0.1</tag>
 	</scm>
 
 	<build>
